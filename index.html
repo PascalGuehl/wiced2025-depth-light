@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Project Title - EGSR 2020</title>
+  <title>Project Title - WICED 2025</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <!-- <link rel="stylesheet" href="https://www.w3schools.com/w3css/5/w3.css"> -->
   <link rel="stylesheet" href="style.css">
@@ -126,26 +126,24 @@
 <body>
   <div class="container">
     <header>
-      <h1>Semi-Procedural Textures Using Point Process Texture Basis Functions</h1>
+      <h1>DepthLight: a Single Image Lighting Pipeline for Seamless Integration of Virtual Objects into Real Scenes</h1>
       <p class="conference">
-        <a href="https://onlinelibrary.wiley.com/journal/14678659" target="_blank">Computer Graphics Forum (CGF)</a>, Volume 39, Issue 4, July 2020<br>
-        <a href="https://egsr2020.london/" target="_blank">EGSR 2020</a>, June-July 2020, London, UK<br>
+        The Eurographics Association<br>
+        <a href="https://expressive.graphics/2025/" target="_blank">Expressive + WICED 2025</a>, May 2025, London, UK<br>
       </p>
     </header>
 
     <section class="authors-section">
       <div class="author-list">
-        <div class="author"><a href="https://pascalguehl.jimdofree.com/" target="_blank">Pascal Guehl</a><sup>1</sup></div>
-        <div class="author"><a href="https://igg.unistra.fr/People/allegre/" target="_blank">Rémi Allègre</a><sup>1</sup></div>
-        <div class="author"><a href="https://dpt-info.u-strasbg.fr/~dischler/" target="_blank">Jean-Michel Dischler</a><sup>1</sup></div>
-        <div class="author"><a href="https://www.cs.purdue.edu/homes/bbenes/" target="_blank">Bedrich Benes</a><sup>2</sup></div>
-        <div class="author"><a href="https://perso.liris.cnrs.fr/eric.galin/" target="_blank">Eric Galin</a><sup>3</sup></div>
+        <div class="author">Raphael Manus<sup>1,2</sup></div>
+        <div class="author"><a href="http://people.irisa.fr/Marc.Christie/" target="_blank">Marc Christie</a><sup>1</sup></div>
+        <div class="author">Samuel Boivin<sup>1</sup></div>
+        <div class="author"><a href="https://pascalguehl.jimdofree.com/" target="_blank">Pascal Guehl</a><sup>2</sup></div>
       </div>
 
       <div class="affiliations">
-        <div><sup>1</sup> <a href="https://icube.unistra.fr/en/" target="_blank">ICube</a>, <a href="https://en.unistra.fr/" target="_blank">Université de Strasbourg</a>, <a href="https://www.cnrs.fr/en" target="_blank">CNRS</a>, France</div>
-        <div><sup>2</sup> <a href="https://www.cs.purdue.edu/" target="_blank">Purdue University</a>, USA</div>
-        <div><sup>3</sup> <a href="https://liris.cnrs.fr/en" target="_blank">LIRIS</a>, <a href="https://www.univ-lyon1.fr/en" target="_blank">Université Claude Bernard Lyon 1</a>, <a href="https://www.cnrs.fr/en" target="_blank">CNRS</a>, France</div>
+        <div><sup>1</sup>Inria, IRISA, CNRS, Université de Rennes, France</div>
+        <div><sup>2</sup> <a href="https://www.lix.polytechnique.fr/" target="_blank">LIX</a>, <a href="https://www.polytechnique.edu/en"  target="_blank">Ecole Polytechnique</a>, <a href="https://www.cnrs.fr/en" target="_blank">CNRS</a>, <a href="https://www.ip-paris.fr/en" target="_blank">Institut Polytechnique de Paris</a>, France</div>
       </div>
     </section>
 
@@ -160,12 +158,7 @@
       <img src="assets/images/teaser.jpg" style="border: 0px solid;" alt="Project Teaser">
       <div class="card-content">
         <p>
-          Input data, a single texture or multiple texture maps (a), and a binary structure (b) are used to generate a semi-procedural
-          output (d). It is a novel texture representation where structure is procedural (d, top) and details are data-driven (d, bottom). Generated
-          textures have procedural properties: infinity, no repetition, self-consistency, and genericity. The structure can be edited by using parameters
-          (only three of them are shown here). Morphing is implicitly obtained by interpolating these parameters. The data-driven details guarantee a
-          good visual match with the exemplar. We call Semi-procedural synthesis the synthesis from a structure that matches the input exemplar, and
-          Semi-procedural editing the synthesis from a user edited structure. A rendered view of the input material is shown for comparison (c).
+        A real image enriched with diffuse synthetic spheres rendered with different methods. Left: scene rendered using a regular imagebased lighting technique (HDRi approach). Right: scene rendered using our DepthLight technique. Note how the regular HDRi approach fails to correctly capture the lighting, as the correct spatial properties of the light is not taken into account. In contrast, our technique better captures the light from the main window (see left, right and top spheres) and from the top light (see top sphere). In addition, it exploits an estimated 3D reconstruction of the scene to render coherent illumination from the scene on the sphere (see bottom left sphere).
         </p>
       </div>
     </section>
@@ -173,7 +166,7 @@
     <section class="abstract">
       <h2>Abstract</h2>
       <p style="padding-left: 16px; padding-right: 16px; padding-top: 6px;">
-        We introduce a novel semi-procedural approach that avoids drawbacks of procedural textures and leverages advantages of datadriven texture synthesis. We split synthesis in two parts: 1) structure synthesis, based on a procedural parametric model and 2) color details synthesis, being data-driven. The procedural model consists of a generic Point Process Texture Basis Function (PPTBF), which extends sparse convolution noises by defining rich convolution kernels. They consist of a window function multiplied with a correlated statistical mixture of Gabor functions, both designed to encapsulate a large span of common spatial stochastic structures, including cells, cracks, grains, scratches, spots, stains, and waves. Parameters can be prescribed automatically by supplying binary structure exemplars. As for noise-based Gaussian textures, the PPTBF is used as stand-alone function, avoiding classification tasks that occur when handling multiple procedural assets. Because the PPTBF is based on a single set of parameters it allows for continuous transitions between different visual structures and an easy control over its visual characteristics. Color is consistently synthesized from the exemplar using a multiscale parallel texture synthesis by numbers, constrained by the PPTBF. The generated textures are parametric, infinite and avoid repetition. The data-driven part is automatic and guarantees strong visual resemblance with inputs.
+      We present DepthLight, a method to estimate spatial lighting for photorealistic Visual Effects (VFX) using a single image as input. Previous techniques rely either on estimated or captured light representations that fail to account for localized lighting effects, or use simplified lights that do not fully capture the complexity of the illumination process. DepthLight addresses these limitations by using a single LDR image with a limited field of view (LFOV) as an input to compute an emissive texture mesh around the image (a mesh which generates spatial lighting in the scene), producing a simple and lightweight 3D representation for photorealistic object relighting. First, an LDR panorama is generated around the input image using a photorealistic diffusion-based inpainting technique, conditioned on the input image. An LDR to HDR network then reconstructs the full HDR panorama, while an off-the-shelf depth estimation technique generates a mesh representation to finally build a 3D emissive mesh. This emissive mesh approximates the bidirectional light interactions between the scene and the virtual objects that is used to relight virtual objects placed in the scene. We also exploit this mesh to cast shadows from the virtual objects on the emissive mesh, and add these shadows to the original LDR image. This flexible pipeline can be easily integrated into different VFX production workflows. In our experiments, DepthLight shows that virtual objects are seamlessly integrated into real scenes with a visually plausible estimation of the lighting.We compared our results to the ground truth lighting using Unreal Engine, as well as to state-of-the-art approaches that use pure HDRi lighting techniques (see Figure 1). Finally, we validated our approach conducting a user evaluation over 52 participants as well as a comparison to existing techniques.
       </p>
     </section>
 
@@ -181,36 +174,21 @@
       <h2>Resources</h2>
       <p>
     <div class="resource-links" style="padding-left: 16px; padding-right: 16px; padding-top: 6px;">
-      <a href="http://igg.unistra.fr/People/semiproctex/paper/semiproctex.pdf" target="_blank">
+      <a href="" target="_blank">
         <i class="fa-solid fa-file-pdf"></i> Article
       </a>
-      <a href="http://igg.unistra.fr/People/semiproctex/paper/Supplemental4.pdf" target="_blank">
-        <i class="fa-regular fa-file-pdf"></i> Supp. doc
-      </a>
-      <a href="https://vimeo.com/430477451" target="_blank">
+      <a href="" target="_blank">
         <i class="fa-regular fa-file-video"></i> Supp. video
       </a>
-      <a href="https://github.com/ASTex-ICube/semiproctex" target="_blank">
+      <a href="https://github.com/raphaelmanus/DepthLight" target="_blank">
         <i class="fa-regular fa-file-code"></i> GitHub repository
-      </a>
-    </div>
-    
-    <div class="resource-links" style="padding-left: 16px; padding-right: 16px; padding-top: 6px;">
-      <a href="http://igg.unistra.fr/People/semiproctex/data/Supplemental1_v100.zip" target="_blank">
-        <i class="fa-regular fa-file-archive"></i> Supp. 1
-      </a>
-      <a href="http://igg.unistra.fr/People/semiproctex/data/Supplemental2_v100.zip" target="_blank">
-        <i class="fa-regular fa-file-archive"></i> Supp. 2
-      </a>
-      <a href="http://igg.unistra.fr/People/semiproctex/data/Supplemental3_v100.zip" target="_blank">
-        <i class="fa-regular fa-file-archive"></i> Supp. 3
       </a>
     </div>
 
   </section>
 
     <footer>
-      <p>2020 - Semi-Procedural Textures Using Point Process Texture Basis Functions</p>
+      <p>2025 - DepthLight: a Single Image Lighting Pipeline for Seamless Integration of Virtual Objects into Real Scenes</p>
     </footer>
   </div>
 </body>

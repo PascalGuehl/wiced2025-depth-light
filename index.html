@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Project Title - EGSR 2020</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- <link rel="stylesheet" href="https://www.w3schools.com/w3css/5/w3.css"> -->
+  <link rel="stylesheet" href="style.css">
+  <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"> -->
+  <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> -->
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" crossorigin="anonymous" referrerpolicy="no-referrer">
+
+  <style>
+    .author-list {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 15px;
+      margin-bottom: 10px;
+      font-size: 1.1em;
+    }
+    .author {
+      display: flex;
+      align-items: center;
+      gap: 1px;
+    }
+    .author sup {
+      font-size: 0.7em;
+      margin-left: 2px;
+    }
+    .author a {
+      color:rgb(74, 109, 185);
+      text-decoration: none;
+    }
+    .author a:hover {
+      text-decoration: underline;
+    }
+    .affiliations {
+      text-align: center;
+      margin-top: 10px;
+      font-size: 0.95em;
+      margin-bottom: 10px;
+      color: #555;
+    }
+    .affiliations a {
+      color:rgb(74, 109, 185);
+      text-decoration: none;
+    }
+    .affiliations a:hover {
+      text-decoration: underline;
+    }
+    .conference a {
+      color:rgb(74, 109, 185);
+      text-decoration: none;
+    }
+    .conference a:hover {
+      text-decoration: underline;
+    }
+    .teaser {
+      margin-top: 20px;
+    }
+    
+    .fa-file-pdf {
+      color: #d22;
+      margin-right: 6px;
+    }
+    .fa-file-video {
+      color: #d22;
+      margin-right: 6px;
+    }
+    .fa-file-code {
+      /* color: #d22; */
+      margin-right: 6px;
+    }
+    .fa-folder-open {
+      /* color: #d22; */
+      margin-right: 6px;
+    }
+
+    .resource-links {
+      display: flex;
+      flex-direction: column;
+      gap: 8px;
+      margin: 20px 0;
+    }
+
+    .resource-links a {
+      text-decoration: none;
+      color:rgb(74, 109, 185);
+      /* font-weight: bold; */
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+    }
+
+    .resource-links a i.fa-file-pdf {
+      color: #d22;
+    }
+
+    .resource-links a i.fa-file-video {
+      color: #28a;
+      color:rgb(74, 109, 185);
+      color: #d22;
+    }
+
+    .resource-links a i.fa-file-code {
+      /* color: #28a;
+      color:rgb(74, 109, 185);
+      color: #d22; */
+    }
+
+    .resource-links {
+      flex-direction: row;
+      flex-wrap: wrap;
+    }
+
+    i.fas,
+    i.far {
+      font-family: 'Font Awesome 6 Free' !important;
+      font-weight: 900;
+    }
+
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>Semi-Procedural Textures Using Point Process Texture Basis Functions</h1>
+      <p class="conference">
+        <a href="https://onlinelibrary.wiley.com/journal/14678659" target="_blank">Computer Graphics Forum (CGF)</a>, Volume 39, Issue 4, July 2020<br>
+        <a href="https://egsr2020.london/" target="_blank">EGSR 2020</a>, June-July 2020, London, UK<br>
+      </p>
+    </header>
+
+    <section class="authors-section">
+      <div class="author-list">
+        <div class="author"><a href="https://pascalguehl.jimdofree.com/" target="_blank">Pascal Guehl</a><sup>1</sup></div>
+        <div class="author"><a href="https://igg.unistra.fr/People/allegre/" target="_blank">Rémi Allègre</a><sup>1</sup></div>
+        <div class="author"><a href="https://dpt-info.u-strasbg.fr/~dischler/" target="_blank">Jean-Michel Dischler</a><sup>1</sup></div>
+        <div class="author"><a href="https://www.cs.purdue.edu/homes/bbenes/" target="_blank">Bedrich Benes</a><sup>2</sup></div>
+        <div class="author"><a href="https://perso.liris.cnrs.fr/eric.galin/" target="_blank">Eric Galin</a><sup>3</sup></div>
+      </div>
+
+      <div class="affiliations">
+        <div><sup>1</sup> <a href="https://icube.unistra.fr/en/" target="_blank">ICube</a>, <a href="https://en.unistra.fr/" target="_blank">Université de Strasbourg</a>, <a href="https://www.cnrs.fr/en" target="_blank">CNRS</a>, France</div>
+        <div><sup>2</sup> <a href="https://www.cs.purdue.edu/" target="_blank">Purdue University</a>, USA</div>
+        <div><sup>3</sup> <a href="https://liris.cnrs.fr/en" target="_blank">LIRIS</a>, <a href="https://www.univ-lyon1.fr/en" target="_blank">Université Claude Bernard Lyon 1</a>, <a href="https://www.cnrs.fr/en" target="_blank">CNRS</a>, France</div>
+      </div>
+    </section>
+
+    <!-- <section class="links">
+      <a href="paper.pdf" target="_blank">📄 Read the paper (PDF)</a>
+      <a href="#" target="_blank">🎮 Interactive Demo</a>
+      <a href="GUI/index.html" target="_blank">🎮 Tutorial</a>
+      <a href="#" target="_blank">💾 Code & Data</a>
+    </section> -->
+
+    <section class="teaser">
+      <img src="assets/images/teaser.jpg" style="border: 0px solid;" alt="Project Teaser">
+      <div class="card-content">
+        <p>
+          Input data, a single texture or multiple texture maps (a), and a binary structure (b) are used to generate a semi-procedural
+          output (d). It is a novel texture representation where structure is procedural (d, top) and details are data-driven (d, bottom). Generated
+          textures have procedural properties: infinity, no repetition, self-consistency, and genericity. The structure can be edited by using parameters
+          (only three of them are shown here). Morphing is implicitly obtained by interpolating these parameters. The data-driven details guarantee a
+          good visual match with the exemplar. We call Semi-procedural synthesis the synthesis from a structure that matches the input exemplar, and
+          Semi-procedural editing the synthesis from a user edited structure. A rendered view of the input material is shown for comparison (c).
+        </p>
+      </div>
+    </section>
+
+    <section class="abstract">
+      <h2>Abstract</h2>
+      <p style="padding-left: 16px; padding-right: 16px; padding-top: 6px;">
+        We introduce a novel semi-procedural approach that avoids drawbacks of procedural textures and leverages advantages of datadriven texture synthesis. We split synthesis in two parts: 1) structure synthesis, based on a procedural parametric model and 2) color details synthesis, being data-driven. The procedural model consists of a generic Point Process Texture Basis Function (PPTBF), which extends sparse convolution noises by defining rich convolution kernels. They consist of a window function multiplied with a correlated statistical mixture of Gabor functions, both designed to encapsulate a large span of common spatial stochastic structures, including cells, cracks, grains, scratches, spots, stains, and waves. Parameters can be prescribed automatically by supplying binary structure exemplars. As for noise-based Gaussian textures, the PPTBF is used as stand-alone function, avoiding classification tasks that occur when handling multiple procedural assets. Because the PPTBF is based on a single set of parameters it allows for continuous transitions between different visual structures and an easy control over its visual characteristics. Color is consistently synthesized from the exemplar using a multiscale parallel texture synthesis by numbers, constrained by the PPTBF. The generated textures are parametric, infinite and avoid repetition. The data-driven part is automatic and guarantees strong visual resemblance with inputs.
+      </p>
+    </section>
+
+    <section class="abstract">
+      <h2>Resources</h2>
+      <p>
+    <div class="resource-links" style="padding-left: 16px; padding-right: 16px; padding-top: 6px;">
+      <a href="http://igg.unistra.fr/People/semiproctex/paper/semiproctex.pdf" target="_blank">
+        <i class="fa-solid fa-file-pdf"></i> Article
+      </a>
+      <a href="http://igg.unistra.fr/People/semiproctex/paper/Supplemental4.pdf" target="_blank">
+        <i class="fa-regular fa-file-pdf"></i> Supp. doc
+      </a>
+      <a href="https://vimeo.com/430477451" target="_blank">
+        <i class="fa-regular fa-file-video"></i> Supp. video
+      </a>
+      <a href="https://github.com/ASTex-ICube/semiproctex" target="_blank">
+        <i class="fa-regular fa-file-code"></i> GitHub repository
+      </a>
+    </div>
+    
+    <div class="resource-links" style="padding-left: 16px; padding-right: 16px; padding-top: 6px;">
+      <a href="http://igg.unistra.fr/People/semiproctex/data/Supplemental1_v100.zip" target="_blank">
+        <i class="fa-regular fa-file-archive"></i> Supp. 1
+      </a>
+      <a href="http://igg.unistra.fr/People/semiproctex/data/Supplemental2_v100.zip" target="_blank">
+        <i class="fa-regular fa-file-archive"></i> Supp. 2
+      </a>
+      <a href="http://igg.unistra.fr/People/semiproctex/data/Supplemental3_v100.zip" target="_blank">
+        <i class="fa-regular fa-file-archive"></i> Supp. 3
+      </a>
+    </div>
+
+  </section>
+
+    <footer>
+      <p>2020 - Semi-Procedural Textures Using Point Process Texture Basis Functions</p>
+    </footer>
+  </div>
+</body>
+</html>
